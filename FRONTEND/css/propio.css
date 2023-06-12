@@ -1,0 +1,33 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url("../fondoprueba.png"); 
+}
+
+#inicio {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: flex-start; 
+    padding-top: 230px; 
+    padding-left: 200px; 
+}
+
+#inicio h1, #inicio h2 {
+    margin-top: 0; 
+    margin-bottom: 10px; 
+    color: #404040;
+    -webkit-background-clip: text;
+    display: block;
+    font-family: "SF Pro", Arial, sans-serif;
+}
+
+#initial-graded {
+    font-size: 3em; 
+}
+
+#second-graded {
+    font-size: 1.9em; 
+}

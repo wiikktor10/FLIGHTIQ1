@@ -2,8 +2,23 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url("../fondoprueba.png"); 
+    background-image: url("../bg23.jpg"); 
+    background-size: cover;
 }
+/* Media query para resoluciones menores a 768px */
+@media (max-width: 768px) {
+    body {
+      background-size: contain; /* Escala la imagen para que se ajuste completamente al contenedor sin recortarla */
+    }
+  }
+  
+  /* Media query para resoluciones menores a 480px */
+  @media (max-width: 480px) {
+    body {
+      background-image: none; /* Elimina la imagen de fondo en dispositivos muy pequeños */
+      /* Puedes agregar estilos adicionales para mejorar la visualización en dispositivos pequeños */
+    }
+  }
 
 #inicio {
     height: 100vh;
@@ -21,7 +36,7 @@ body, html {
     color: #404040;
     -webkit-background-clip: text;
     display: block;
-    font-family: "SF Pro", Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 #initial-graded {

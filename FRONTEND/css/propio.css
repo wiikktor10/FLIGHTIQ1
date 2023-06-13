@@ -49,15 +49,35 @@ body, html {
 
 #i-gra {
     font-size: 3em; 
+    margin-top: 0;
 }
 
 #s-gra {
     font-size: 1.9em; 
+    margin-bottom: 10px;
 }
 
 
 /* FIN DE LA CONFIGURACIÓN DE LA PÁGINA DE INICIO PRINCIPAL */
 
+/* CONFIGURACIÓN DE LA FOTO DEL PILOTO */
+
+#piloto-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-top: 20px;
+}
+
+#piloto-foto {
+  float: right;
+  max-width: 700px;
+  max-height: 700px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+/* FIN DE LA CONFIGURACIÓN DE LA FOTO DEL PILOTO */
 
 /* CONFIGURACIÓN DE LA BANDA NEGRA  DE NAVEGACIÓN PREVIA AL DESC. EMPRESAS */
 
@@ -72,15 +92,17 @@ body, html {
 /* CONFIGURACIÓN DEL APARTADO DE DESCUENTOS PARA EMPRESAS */
 
 #desc-empresas {
+  padding-top: 15px;
   background-color: #404040;
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 10vh;
+  height: 12vh;
 }
 
 #desc-empresas a {
+  padding-top: 10px;
   color: #2997ff; /* Cambia esto al color que prefieras */
   -webkit-background-clip: text;
   display: block;

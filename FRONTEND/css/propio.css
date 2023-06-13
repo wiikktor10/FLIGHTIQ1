@@ -1,24 +1,31 @@
+/* MEDIA QUERIES */
+
+@media (max-width: 768px) {
+  body {
+    background-size: contain; 
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    background-image: none; 
+  }
+}
+
+
+
+/* CONFIGURACIÓN BÁSICA DEL FONDO */
+
 body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url("../bg23.jpg"); 
+    background-color: black;
     background-size: cover;
 }
-/* Media query para resoluciones menores a 768px */
-@media (max-width: 768px) {
-    body {
-      background-size: contain; /* Escala la imagen para que se ajuste completamente al contenedor sin recortarla */
-    }
-  }
-  
-  /* Media query para resoluciones menores a 480px */
-  @media (max-width: 480px) {
-    body {
-      background-image: none; /* Elimina la imagen de fondo en dispositivos muy pequeños */
-      /* Puedes agregar estilos adicionales para mejorar la visualización en dispositivos pequeños */
-    }
-  }
+
+
+/* CONFIGURACIÓN DE LA PÁGINA DE INICIO PRINCIPAL */
 
 #inicio {
     height: 100vh;
@@ -33,16 +40,63 @@ body, html {
 #inicio h1, #inicio h2 {
     margin-top: 0; 
     margin-bottom: 10px; 
-    color: #404040;
+    background-image: linear-gradient(to bottom, #D9D9D9, #BFBFBF);
+    color: transparent;
     -webkit-background-clip: text;
     display: block;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-#initial-graded {
+#i-gra {
     font-size: 3em; 
 }
 
-#second-graded {
+#s-gra {
     font-size: 1.9em; 
 }
+
+
+/* FIN DE LA CONFIGURACIÓN DE LA PÁGINA DE INICIO PRINCIPAL */
+
+
+/* CONFIGURACIÓN DE LA BANDA NEGRA  DE NAVEGACIÓN PREVIA AL DESC. EMPRESAS */
+
+#banda-nav-negra {
+  background-color: black;
+  padding-top: 110px;
+}
+
+/* FIN DE LA CONFIGURACIÓN DE LA BANDA NEGRA PREVIA AL DESC. EMPRESAS */
+
+
+/* CONFIGURACIÓN DEL APARTADO DE DESCUENTOS PARA EMPRESAS */
+
+#desc-empresas {
+  background-color: #404040;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 10vh;
+}
+
+#desc-empresas a {
+  color: #2997ff; /* Cambia esto al color que prefieras */
+  -webkit-background-clip: text;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}
+
+#texto-anuncio-empresas {
+  color: transparent;
+  background-image: linear-gradient(to bottom, #D9D9D9, #BFBFBF);
+  -webkit-background-clip: text;
+  display: block;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* FIN DE LA CONFIGURACIÓN DEL APARTADO DE DESCUENTOS PARA EMPRESAS */
+
+
+
+

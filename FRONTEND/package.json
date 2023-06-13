@@ -1,0 +1,21 @@
+{
+  "name": "flightiq1",
+  "version": "1.0.0",
+  "description": "FLIGHTIQ repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "flightiq1"
+  },
+  "keywords": [
+    "aviation"
+  ],
+  "author": "t4victor",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}
